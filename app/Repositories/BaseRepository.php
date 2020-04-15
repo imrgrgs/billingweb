@@ -52,13 +52,13 @@ abstract class BaseRepository
      */
     public function makeModel()
     {
-        $model = $this->app->make($this->model());
+        $_model = $this->app->make($this->model());
 
-        if (!$model instanceof Model) {
+        if (!$_model instanceof Model) {
             throw new \Exception("Class {$this->model()} must be an instance of Illuminate\\Database\\Eloquent\\Model");
         }
 
-        return $this->model = $model;
+        return $this->model = $_model;
     }
 
     /**
@@ -132,11 +132,11 @@ abstract class BaseRepository
      */
     public function create($input)
     {
-        $model = $this->model->newInstance($input);
+        $_model = $this->model->newInstance($input);
 
-        $model->save();
+        $_model->save();
 
-        return $model;
+        return $_model;
     }
 
     /**
@@ -166,13 +166,13 @@ abstract class BaseRepository
     {
         $query = $this->model->newQuery();
 
-        $model = $query->findOrFail($id);
+        $_model = $query->findOrFail($id);
 
-        $model->fill($input);
+        $_model->fill($input);
 
-        $model->save();
+        $_model->save();
 
-        return $model;
+        return $_model;
     }
 
     /**
@@ -186,8 +186,8 @@ abstract class BaseRepository
     {
         $query = $this->model->newQuery();
 
-        $model = $query->findOrFail($id);
+        $_model = $query->findOrFail($id);
 
-        return $model->delete();
+        return $_model->delete();
     }
 }

@@ -1,0 +1,36 @@
+<?php
+
+return array (
+  'singular' => 'Admin',
+  'plural' => 'Admins',
+  'fields' => 
+  array (
+    'adm_id' => 'Adm Id',
+    'adm_razao' => 'Adm Razao',
+    'adm_cnpj' => 'Adm Cnpj',
+    'adm_inscrest' => 'Adm Inscrest',
+    'adm_fantasia' => 'Adm Fantasia',
+    'adm_rua' => 'Adm Rua',
+    'adm_complem' => 'Adm Complem',
+    'adm_bairro' => 'Adm Bairro',
+    'adm_cidade' => 'Adm Cidade',
+    'adm_estado' => 'Adm Estado',
+    'adm_cep' => 'Adm Cep',
+    'adm_email' => 'Adm Email',
+    'adm_banco' => 'Adm Banco',
+    'adm_agencia' => 'Adm Agencia',
+    'adm_conta' => 'Adm Conta',
+    'adm_saldo' => 'Adm Saldo',
+    'adm_login' => 'Adm Login',
+    'adm_senha' => 'Adm Senha',
+    'adm_mudasenha' => 'Adm Mudasenha',
+    'adm_telefone1' => 'Adm Telefone1',
+    'adm_telefone2' => 'Adm Telefone2',
+    'adm_celular' => 'Adm Celular',
+    'adm_data' => 'Adm Data',
+    'adm_contato' => 'Adm Contato',
+    'created_at' => 'Created At',
+    'updated_at' => 'Updated At',
+    'deleted_at' => 'Deleted At',
+  ),
+);

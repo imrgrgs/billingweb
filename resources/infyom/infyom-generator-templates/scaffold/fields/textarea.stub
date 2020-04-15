@@ -1,0 +1,13 @@
+<!-- $FIELD_NAME_TITLE$ Field -->
+<div class="form-group col-sm-12 col-lg-12">
+    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!}
+    {!! Form::textarea('$FIELD_NAME$', null, ['class' => 'form-control'$SIZE$]) !!}
+</div>
+@push('scripts')
+    <script type="text/javascript">
+        CKEDITOR.replace('$FIELD_NAME$', {
+          language: '{{ strtolower(config('app.locale')) }}',
+          height: '150px',
+        })
+    </script>
+@endpush
