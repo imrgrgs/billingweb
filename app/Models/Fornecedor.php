@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Fornecedor
  * @package App\Models
- * @version April 15, 2020, 12:14 pm UTC
+ * @version April 15, 2020, 1:43 pm UTC
  *
  * @property \App\Models\Admin forAdmin
  * @property \Illuminate\Database\Eloquent\Collection representantes
@@ -119,13 +119,11 @@ class Fornecedor extends Model
 
     public $table = 'fornecedor';
     
-    const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'updated_at';
-
 
     protected $dates = ['deleted_at'];
 
 
+    protected $primaryKey = 'for_id';
 
     public $fillable = [
         'for_admin_id',

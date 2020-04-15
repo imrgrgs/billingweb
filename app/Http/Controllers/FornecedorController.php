@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\FornecedorDataTable;
+use App\Http\Requests;
 use App\Http\Requests\CreateFornecedorRequest;
 use App\Http\Requests\UpdateFornecedorRequest;
 use App\Repositories\FornecedorRepository;
-use App\Http\Controllers\AppBaseController;
-use Illuminate\Http\Request;
 use Flash;
+use App\Http\Controllers\AppBaseController;
 use Response;
 
 class FornecedorController extends AppBaseController
@@ -23,16 +24,12 @@ class FornecedorController extends AppBaseController
     /**
      * Display a listing of the Fornecedor.
      *
-     * @param Request $request
-     *
+     * @param FornecedorDataTable $fornecedorDataTable
      * @return Response
      */
-    public function index(Request $request)
+    public function index(FornecedorDataTable $fornecedorDataTable)
     {
-        $fornecedors = $this->fornecedorRepository->all();
-
-        return view('fornecedors.index')
-            ->with('fornecedors', $fornecedors);
+        return $fornecedorDataTable->render('fornecedores.index');
     }
 
     /**
@@ -42,7 +39,7 @@ class FornecedorController extends AppBaseController
      */
     public function create()
     {
-        return view('fornecedors.create');
+        return view('fornecedores.create');
     }
 
     /**
@@ -58,15 +55,15 @@ class FornecedorController extends AppBaseController
 
         $fornecedor = $this->fornecedorRepository->create($input);
 
-        Flash::success(__('messages.saved', ['model' => __('models/fornecedors.singular')]));
+        Flash::success(__('messages.saved', ['model' => __('models/fornecedores.singular')]));
 
-        return redirect(route('fornecedors.index'));
+        return redirect(route('fornecedores.index'));
     }
 
     /**
      * Display the specified Fornecedor.
      *
-     * @param int $id
+     * @param  int $id
      *
      * @return Response
      */
@@ -75,18 +72,18 @@ class FornecedorController extends AppBaseController
         $fornecedor = $this->fornecedorRepository->find($id);
 
         if (empty($fornecedor)) {
-            Flash::error(__('messages.not_found', ['model' => __('models/fornecedors.singular')]));
+            Flash::error(__('models/fornecedores.singular').' '.__('messages.not_found'));
 
-            return redirect(route('fornecedors.index'));
+            return redirect(route('fornecedores.index'));
         }
 
-        return view('fornecedors.show')->with('fornecedor', $fornecedor);
+        return view('fornecedores.show')->with('fornecedor', $fornecedor);
     }
 
     /**
      * Show the form for editing the specified Fornecedor.
      *
-     * @param int $id
+     * @param  int $id
      *
      * @return Response
      */
@@ -95,18 +92,18 @@ class FornecedorController extends AppBaseController
         $fornecedor = $this->fornecedorRepository->find($id);
 
         if (empty($fornecedor)) {
-            Flash::error(__('messages.not_found', ['model' => __('models/fornecedors.singular')]));
+            Flash::error(__('messages.not_found', ['model' => __('models/fornecedores.singular')]));
 
-            return redirect(route('fornecedors.index'));
+            return redirect(route('fornecedores.index'));
         }
 
-        return view('fornecedors.edit')->with('fornecedor', $fornecedor);
+        return view('fornecedores.edit')->with('fornecedor', $fornecedor);
     }
 
     /**
      * Update the specified Fornecedor in storage.
      *
-     * @param int $id
+     * @param  int              $id
      * @param UpdateFornecedorRequest $request
      *
      * @return Response
@@ -116,24 +113,22 @@ class FornecedorController extends AppBaseController
         $fornecedor = $this->fornecedorRepository->find($id);
 
         if (empty($fornecedor)) {
-            Flash::error(__('messages.not_found', ['model' => __('models/fornecedors.singular')]));
+            Flash::error(__('messages.not_found', ['model' => __('models/fornecedores.singular')]));
 
-            return redirect(route('fornecedors.index'));
+            return redirect(route('fornecedores.index'));
         }
 
         $fornecedor = $this->fornecedorRepository->update($request->all(), $id);
 
-        Flash::success(__('messages.updated', ['model' => __('models/fornecedors.singular')]));
+        Flash::success(__('messages.updated', ['model' => __('models/fornecedores.singular')]));
 
-        return redirect(route('fornecedors.index'));
+        return redirect(route('fornecedores.index'));
     }
 
     /**
      * Remove the specified Fornecedor from storage.
      *
-     * @param int $id
-     *
-     * @throws \Exception
+     * @param  int $id
      *
      * @return Response
      */
@@ -142,15 +137,15 @@ class FornecedorController extends AppBaseController
         $fornecedor = $this->fornecedorRepository->find($id);
 
         if (empty($fornecedor)) {
-            Flash::error(__('messages.not_found', ['model' => __('models/fornecedors.singular')]));
+            Flash::error(__('messages.not_found', ['model' => __('models/fornecedores.singular')]));
 
-            return redirect(route('fornecedors.index'));
+            return redirect(route('fornecedores.index'));
         }
 
         $this->fornecedorRepository->delete($id);
 
-        Flash::success(__('messages.deleted', ['model' => __('models/fornecedors.singular')]));
+        Flash::success(__('messages.deleted', ['model' => __('models/fornecedores.singular')]));
 
-        return redirect(route('fornecedors.index'));
+        return redirect(route('fornecedores.index'));
     }
 }

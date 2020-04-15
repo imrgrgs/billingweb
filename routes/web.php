@@ -212,3 +212,5 @@ Route::resource('assinanteCancels', 'AssinanteCancelController');
 Route::resource('assinanteCancelados', 'AssinanteCanceladoController');
 
 Route::resource('voipToVoips', 'VoipToVoipController');
+
+Route::resource('fornecedores', 'FornecedorController');

@@ -410,3 +410,11 @@
     <a href="{{ route('voipToVoips.index') }}"><i class="fa fa-edit"></i><span>@lang('models/voipToVoips.plural')</span></a>
 </li>
 
+<li class="{{ Request::is('fornecedores*') ? 'active' : '' }}">
+    <a href="{{ route('fornecedores.index') }}"><i class="fa fa-edit"></i><span>@lang('models/fornecedores.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('fornecedores*') ? 'active' : '' }}">
+    <a href="{{ route('fornecedores.index') }}"><i class="fa fa-edit"></i><span>@lang('models/fornecedores.plural')</span></a>
+</li>
+
