@@ -166,3 +166,247 @@
     <a href="{{ route('custoTerms.index') }}"><i class="fa fa-edit"></i><span>@lang('models/custoTerms.plural')</span></a>
 </li>
 
+<li class="{{ Request::is('definePstns*') ? 'active' : '' }}">
+    <a href="{{ route('definePstns.index') }}"><i class="fa fa-edit"></i><span>@lang('models/definePstns.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('discadoxVoips*') ? 'active' : '' }}">
+    <a href="{{ route('discadoxVoips.index') }}"><i class="fa fa-edit"></i><span>@lang('models/discadoxVoips.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('envioSms*') ? 'active' : '' }}">
+    <a href="{{ route('envioSms.index') }}"><i class="fa fa-edit"></i><span>@lang('models/envioSms.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('estatisticas*') ? 'active' : '' }}">
+    <a href="{{ route('estatisticas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/estatisticas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('extensionTables*') ? 'active' : '' }}">
+    <a href="{{ route('extensionTables.index') }}"><i class="fa fa-edit"></i><span>@lang('models/extensionTables.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('faxVirtuals*') ? 'active' : '' }}">
+    <a href="{{ route('faxVirtuals.index') }}"><i class="fa fa-edit"></i><span>@lang('models/faxVirtuals.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('faxVirtualParams*') ? 'active' : '' }}">
+    <a href="{{ route('faxVirtualParams.index') }}"><i class="fa fa-edit"></i><span>@lang('models/faxVirtualParams.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('firewalls*') ? 'active' : '' }}">
+    <a href="{{ route('firewalls.index') }}"><i class="fa fa-edit"></i><span>@lang('models/firewalls.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('fonesAnatels*') ? 'active' : '' }}">
+    <a href="{{ route('fonesAnatels.index') }}"><i class="fa fa-edit"></i><span>@lang('models/fonesAnatels.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('fonesBloqs*') ? 'active' : '' }}">
+    <a href="{{ route('fonesBloqs.index') }}"><i class="fa fa-edit"></i><span>@lang('models/fonesBloqs.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('fonesProcons*') ? 'active' : '' }}">
+    <a href="{{ route('fonesProcons.index') }}"><i class="fa fa-edit"></i><span>@lang('models/fonesProcons.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('fonesRestricaos*') ? 'active' : '' }}">
+    <a href="{{ route('fonesRestricaos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/fonesRestricaos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('fonesUsers*') ? 'active' : '' }}">
+    <a href="{{ route('fonesUsers.index') }}"><i class="fa fa-edit"></i><span>@lang('models/fonesUsers.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('fornecedors*') ? 'active' : '' }}">
+    <a href="{{ route('fornecedors.index') }}"><i class="fa fa-edit"></i><span>@lang('models/fornecedors.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('grupos*') ? 'active' : '' }}">
+    <a href="{{ route('grupos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/grupos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('grupoSms*') ? 'active' : '' }}">
+    <a href="{{ route('grupoSms.index') }}"><i class="fa fa-edit"></i><span>@lang('models/grupoSms.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('grupoVoips*') ? 'active' : '' }}">
+    <a href="{{ route('grupoVoips.index') }}"><i class="fa fa-edit"></i><span>@lang('models/grupoVoips.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('grupoVoipRamals*') ? 'active' : '' }}">
+    <a href="{{ route('grupoVoipRamals.index') }}"><i class="fa fa-edit"></i><span>@lang('models/grupoVoipRamals.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('grupoUras*') ? 'active' : '' }}">
+    <a href="{{ route('grupoUras.index') }}"><i class="fa fa-edit"></i><span>@lang('models/grupoUras.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('grupoUraDesvios*') ? 'active' : '' }}">
+    <a href="{{ route('grupoUraDesvios.index') }}"><i class="fa fa-edit"></i><span>@lang('models/grupoUraDesvios.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('gvts*') ? 'active' : '' }}">
+    <a href="{{ route('gvts.index') }}"><i class="fa fa-edit"></i><span>@lang('models/gvts.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('ligacaos*') ? 'active' : '' }}">
+    <a href="{{ route('ligacaos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/ligacaos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('ligOnlines*') ? 'active' : '' }}">
+    <a href="{{ route('ligOnlines.index') }}"><i class="fa fa-edit"></i><span>@lang('models/ligOnlines.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('logChamadas*') ? 'active' : '' }}">
+    <a href="{{ route('logChamadas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/logChamadas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('logTarifacaos*') ? 'active' : '' }}">
+    <a href="{{ route('logTarifacaos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/logTarifacaos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('naoTarifadoTerms*') ? 'active' : '' }}">
+    <a href="{{ route('naoTarifadoTerms.index') }}"><i class="fa fa-edit"></i><span>@lang('models/naoTarifadoTerms.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('operadoras*') ? 'active' : '' }}">
+    <a href="{{ route('operadoras.index') }}"><i class="fa fa-edit"></i><span>@lang('models/operadoras.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('ordemTerminacaoIas*') ? 'active' : '' }}">
+    <a href="{{ route('ordemTerminacaoIas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/ordemTerminacaoIas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('parBoletos*') ? 'active' : '' }}">
+    <a href="{{ route('parBoletos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/parBoletos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('parBoletoRevs*') ? 'active' : '' }}">
+    <a href="{{ route('parBoletoRevs.index') }}"><i class="fa fa-edit"></i><span>@lang('models/parBoletoRevs.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('parRevendas*') ? 'active' : '' }}">
+    <a href="{{ route('parRevendas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/parRevendas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('pins*') ? 'active' : '' }}">
+    <a href="{{ route('pins.index') }}"><i class="fa fa-edit"></i><span>@lang('models/pins.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('planos*') ? 'active' : '' }}">
+    <a href="{{ route('planos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/planos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('popsReveAssis*') ? 'active' : '' }}">
+    <a href="{{ route('popsReveAssis.index') }}"><i class="fa fa-edit"></i><span>@lang('models/popsReveAssis.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('posPagos*') ? 'active' : '' }}">
+    <a href="{{ route('posPagos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/posPagos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('programas*') ? 'active' : '' }}">
+    <a href="{{ route('programas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/programas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('provedorSms*') ? 'active' : '' }}">
+    <a href="{{ route('provedorSms.index') }}"><i class="fa fa-edit"></i><span>@lang('models/provedorSms.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('publicFones*') ? 'active' : '' }}">
+    <a href="{{ route('publicFones.index') }}"><i class="fa fa-edit"></i><span>@lang('models/publicFones.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('publicidades*') ? 'active' : '' }}">
+    <a href="{{ route('publicidades.index') }}"><i class="fa fa-edit"></i><span>@lang('models/publicidades.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('publicidadeAudios*') ? 'active' : '' }}">
+    <a href="{{ route('publicidadeAudios.index') }}"><i class="fa fa-edit"></i><span>@lang('models/publicidadeAudios.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('publicidadeParams*') ? 'active' : '' }}">
+    <a href="{{ route('publicidadeParams.index') }}"><i class="fa fa-edit"></i><span>@lang('models/publicidadeParams.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('relacaos*') ? 'active' : '' }}">
+    <a href="{{ route('relacaos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/relacaos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('representantes*') ? 'active' : '' }}">
+    <a href="{{ route('representantes.index') }}"><i class="fa fa-edit"></i><span>@lang('models/representantes.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('saldoGerals*') ? 'active' : '' }}">
+    <a href="{{ route('saldoGerals.index') }}"><i class="fa fa-edit"></i><span>@lang('models/saldoGerals.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('servers*') ? 'active' : '' }}">
+    <a href="{{ route('servers.index') }}"><i class="fa fa-edit"></i><span>@lang('models/servers.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('sipBuddies*') ? 'active' : '' }}">
+    <a href="{{ route('sipBuddies.index') }}"><i class="fa fa-edit"></i><span>@lang('models/sipBuddies.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('smsCampanhas*') ? 'active' : '' }}">
+    <a href="{{ route('smsCampanhas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/smsCampanhas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('smsCampanhaFones*') ? 'active' : '' }}">
+    <a href="{{ route('smsCampanhaFones.index') }}"><i class="fa fa-edit"></i><span>@lang('models/smsCampanhaFones.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('tabAssinantes*') ? 'active' : '' }}">
+    <a href="{{ route('tabAssinantes.index') }}"><i class="fa fa-edit"></i><span>@lang('models/tabAssinantes.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('tabelaReps*') ? 'active' : '' }}">
+    <a href="{{ route('tabelaReps.index') }}"><i class="fa fa-edit"></i><span>@lang('models/tabelaReps.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('tabEspAs*') ? 'active' : '' }}">
+    <a href="{{ route('tabEspAs.index') }}"><i class="fa fa-edit"></i><span>@lang('models/tabEspAs.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('tabEsps*') ? 'active' : '' }}">
+    <a href="{{ route('tabEsps.index') }}"><i class="fa fa-edit"></i><span>@lang('models/tabEsps.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('tabRevendas*') ? 'active' : '' }}">
+    <a href="{{ route('tabRevendas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/tabRevendas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('tarifas*') ? 'active' : '' }}">
+    <a href="{{ route('tarifas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/tarifas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('taxas*') ? 'active' : '' }}">
+    <a href="{{ route('taxas.index') }}"><i class="fa fa-edit"></i><span>@lang('models/taxas.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('terminacaos*') ? 'active' : '' }}">
+    <a href="{{ route('terminacaos.index') }}"><i class="fa fa-edit"></i><span>@lang('models/terminacaos.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('tpMenus*') ? 'active' : '' }}">
+    <a href="{{ route('tpMenus.index') }}"><i class="fa fa-edit"></i><span>@lang('models/tpMenus.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('assinantes*') ? 'active' : '' }}">
+    <a href="{{ route('assinantes.index') }}"><i class="fa fa-edit"></i><span>@lang('models/assinantes.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('assinanteCancels*') ? 'active' : '' }}">
+    <a href="{{ route('assinanteCancels.index') }}"><i class="fa fa-edit"></i><span>@lang('models/assinanteCancels.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('assinanteCancelados*') ? 'active' : '' }}">
+    <a href="{{ route('assinanteCancelados.index') }}"><i class="fa fa-edit"></i><span>@lang('models/assinanteCancelados.plural')</span></a>
+</li>
+
+<li class="{{ Request::is('voipToVoips*') ? 'active' : '' }}">
+    <a href="{{ route('voipToVoips.index') }}"><i class="fa fa-edit"></i><span>@lang('models/voipToVoips.plural')</span></a>
+</li>
+
